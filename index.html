@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>UcuzaBilet</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:transparent !important;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex">
+                        <img src="./img/searchflight.svg" alt="">
+                        <a class="nav-link active" aria-current="page" href="#">UÇAK</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <img src="./img/searchhotel.svg" alt="">
+                        <a class="nav-link active" aria-current="page" href="#">OTEL</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Online İşlemler
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Giriş Yap/Üye Ol
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./img/turkey.png" alt="" height="20px">
+                            <span class="mx-2">TRY</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><img src="./img/united-states.png" alt=""
+                                        height="20px"><span class="mx-2">English</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./img/france.png" alt="" height="20px"><span
+                                        class="mx-2">French</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./img/germany.png" alt=""
+                                        height="20px"><span class="mx-2">German</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="./img/italy.png" alt="" height="20px"><span
+                                        class="mx-2">İtalian</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- 1 -->
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between align-items-lg-center align-items-xl-center align-items-xxl-center">
+                            <div class="flex-sm-column flex-md-column">
+                                <h1 class="d-lg-inline d-xl-inline d-xxl-inline">Alaturka Pansiyon</h1>
+                            <p class="d-lg-inline d-xl-inline d-xxl-inline ms-md-1 ms-lg-1 ms-xl-1">Anasayfa / Antalya Otelleri / Alaturka Pansiyon</p>
+                            </div>
+                            <div class="flex-sm-column flex-md-column d-lg-flex flex-lg-row d-xl-flex flex-xl-row d-xxl-flex flex-xxl-row">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share mx-3" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                  </svg>
+                                  <span >Paylaş</span> 
+                                </div>
+                               <div class="d-flex justify-content-center align-items-center">
+                                 <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart mx-3" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                  </svg>
+                                  <span >Beğen</span>
+                               </div>                               
+                            </div>
+                            
+                        </div>
+                       
+                        <div class="col-12 my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(253, 199, 15)"
+                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                            </svg>
+                            <span class="mx-1">Kemer Göynük, Antalya</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class=" img-col img-1 " style="height: 500px;">
+                   <div class="d-flex flex-column bg-white" style="border-radius: 8px; width: fit-content; z-index: 1000; margin: 16px; padding:8px">
+                    <span style="color:rgb(254, 223, 119)">OTEL PUAN</span>
+                    <span><strong>8.2 PUAN</strong></span>
+                   </div>
+                </div>
+                <div class="img-col">
+                    <div class="row justify-content-between " style="margin-bottom:10px ;">
+                        <div class="col-12 img-2 " style="height:245px"></div>
+                    </div>
+                    <div class="row justify-content-between ">
+                        <div class="smallimg-col img-3 " style="height:245px"></div>
+                        <div class="smallimg-col img-4 " style="height:245px">
+                            <div class="black-filter" style="display: flex;
+                            align-items: flex-end;
+                            justify-content: center;">
+                                <div class="d-flex bg-white align-items-center" style="width: fit-content; z-index: 1000; margin: 16px; padding:8px ; border-radius: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(254, 223, 119)" class="bi bi-camera-fill me-3" viewBox="0 0 16 16">
+                                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                                      </svg>
+                                    <span><strong>+54 Fotoğraf</strong>
+                                        
+                                    </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="container py-4 ">
+            <div class="row border-full">
+                <div class="col border-deco" style="text-align:center ;"><a href="#list-item-1">Oda Seçenekleri</a>
+                </div>
+                <div class="col border-deco" style="text-align:center ;"><a href="#list-item-2">Genel Bilgi</a></div>
+                <div class="col border-deco" style="text-align:center ;"><a href="#list-item-3">Tesis Olanakları</a>
+                </div>
+                <div class="col border-deco" style="text-align:center ;"><a href="#list-item-4">Detaylı bilgi</a></div>
+                <div class="col border-deco" style="text-align:center ;"><a href="#list-item-5">Yorumlar</a></div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="container">
+            <div class="row align-items-sm-start align-items-md-start flex-column flex-sm-column flex-md-column d-lg-flex flex-lg-row d-xl-flex flex-xl-row d-xxl-flex flex-xxl-row ">
+                <div class=" col-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <p style="margin: 0; padding:0;"><strong>Kemer</strong></p>
+                    <p style="color:lightslategray;margin: 0; padding:0;">Antalya, Türkiye</p>
+                </div>
+
+                <div class="col ">
+                    <!--  <label for="startDate"></label> -->
+                    <input id="startDate" class="form-control" type="date" />
+                    <!-- <span id="startDateSelected"></span> -->
+
+                </div>
+
+
+                <div class="col">
+                    <!--   <label for="endDate"></label> -->
+                    <input id="endDate" class="form-control" type="date" />
+                    <!-- <span id="endDateSelected"></span> -->
+                </div>
+
+
+                <div class="col d-flex flex-column justify-content-center align-items-day" >
+                    <div class="d-flex flex-column align-items-center justify-content-center px-2 py-1 my-auto" style="background-color:rgb(253, 240, 213) ; width: fit-content;" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                          </svg>
+                          <p style="padding: 0; margin:0">4 Gece</p>
+                    </div>
+                    
+                </div>
+                <div class="col" >
+                    <div class="dropdown">
+                        <button class="small-dropdown btn d-flex justify-content-center align-items-center dropdown-toggle" type="button" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="d-flex flex-column align-items-center justify-content-center  my-auto"  >
+                                <p style="padding: 0; margin:0"><strong>3 Kişi</strong></p>
+                                  <p style="padding: 0; margin:0">1 oda</p>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                    
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1 col-xxl-1 btn-text-align" >
+                    <div class="btn btn-danger py-2 px-3">ARA</div>
+                </div>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="container p-0 my-4">
+            <div class="row my-5 gap-4 justify-content-between" id="list-item-2">
+                <div class="col-12 col-lg-7 col-xl-7 col-xxl-7">
+                    <div class="row">
+                        <div class="col-6 d-flex p-3 ">
+                            <i class="material-icons" style="color:rgb(254, 223, 119) ;">child_care
+                            </i>
+                            <span class="px-2">Çocuk Dostu</span>
+
+
+                        </div>
+                        <div class="col-6 d-flex p-3 ">
+                            <i class="material-icons" style="color:rgb(254, 223, 119) ;">beach_access
+                            </i>
+                            <span class="px-2">Denizi Kum</span>
+                        </div>
+                        <div class="col-6 d-flex p-3 ">
+                            <i class="material-icons" style="color:rgb(254, 223, 119) ;">beach_access
+                            </i>
+                            <span class="px-2">Özel Plaj</span>
+                        </div>
+                        <div class="col-6 d-flex p-3 ">
+                            <i class="material-icons" style="color:rgb(254, 223, 119) ;">check_circle
+
+                            </i>
+                            <span class="px-2">Güvenli Turizm Sertifikalı Otel</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col" style="text-align: justify;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cumque?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id possimus, dicta dignissimos
+                                ab dolorum delectus itaque vel velit. Magni eum vero non illum minima sunt adipisci et
+                                fugiat, sint itaque.
+                                Quos, praesentium expedita. Similique ex aut quas nemo quo ea suscipit doloremque a
+                                praesentium temporibus. Fuga ullam, quas eos tempora sunt consequatur voluptate nam
+                                numquam magni ratione, velit minima ea!
+                                Earum repudiandae dolorum expedita, amet maiores deserunt ullam ratione quo numquam quae
+                                voluptatum nostrum sit, itaque ad, architecto ipsa consectetur tenetur eaque iusto
+                                officiis sequi provident saepe minima. Aliquam, doloribus.
+                                Obcaecati cupiditate optio molestiae possimus iste voluptates, quasi iure ratione
+                                dignissimos assumenda expedita cumque ut veniam itaque reiciendis exercitationem magnam
+                                deserunt ducimus cum dolorem? Omnis iusto alias commodi quis assumenda?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="row mb-3" style="background-color:rgb(253, 240, 213) ;">
+                        <div class="col d-flex justify-content-center align-items-center p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(254, 223, 119)"
+                                class="bi bi-patch-check-fill me-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                            </svg>
+                            <p style="margin:0 ;">Güvenli Turizm Sertifikalı Tesis</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-circle mx-2" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25623.96111083795!2d30.527190423439844!3d36.60242612166543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b7a4820a22e7%3A0x973532648469d291!2sKemer%2C%20Antalya!5e0!3m2!1sen!2str!4v1657552165944!5m2!1sen!2str"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5" id="list-item-1">
+                <div class="col-12">
+                    <h2>
+                        Oda Seçenekleri
+                    </h2>
+                </div>
+                <div class="col-12 room-details my-2">
+                    <div class="row">
+                        <div class="col-auto room-detail-img mx-lg-2 mx-2"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 flex-sm-column flex-md-column d-lg-flex flex-lg-row d-xl-flex flex-xl-row d-xxl-flex flex-xxl-row align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5 class="card-title">Superior Kara Manzaralı</h5>
+                                <div>
+                                    <ul>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">hotel</i>
+                                            <span class="px-2">Çift Kişilik Tek Geniş Yatak</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">groups</i>
+                                            <span class="px-2">3 Kişilik</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">zoom_out_map</i>
+                                            <span class="px-2">30 m²</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-3">
+                                        <li>
+                                            <a class="d-flex" href="">
+                                                <span>Detaylı Oda Bilgisi</span><i class="material-icons px-2"
+                                                    style="color:rgb(254, 223, 119) ;">arrow_forward</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+                                <div class="room-detail-inner px-3 py-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-start align-items-xl-start align-items-xxl-start">
+                                                <li>Oda Kahvaltı</li>
+                                                <li>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                                <li>Ücretsiz İptal</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-end align-items-xl-end align-items-xxl-end">
+                                                <li style="color: slategrey;">3 Gece İçin Toplam:</li>
+                                                <li>1900 TL</li>
+                                                <button class="btn btn-outline-ets">
+                                                    <h5>ODAYI SEÇ</h5>
+                                                </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 room-details my-2">
+                    <div class="row">
+                        <div class="col-auto room-detail-img mx-lg-2 mx-2  "></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 flex-sm-column flex-md-column d-lg-flex flex-lg-row d-xl-flex flex-xl-row d-xxl-flex flex-xxl-row align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5 class="card-title">Superior Family Plus</h5>
+                                <div>
+                                    <ul>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">hotel</i>
+                                            <span class="px-2">Çift Kişilik Tek Geniş Yatak</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">groups</i>
+                                            <span class="px-2">3 Kişilik</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">zoom_out_map</i>
+                                            <span class="px-2">30 m²</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-3">
+                                        <li>
+                                            <a class="d-flex" href="">
+                                                <span>Detaylı Oda Bilgisi</span><i class="material-icons px-2"
+                                                    style="color:rgb(254, 223, 119) ;">arrow_forward</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+                                <div class="room-detail-inner px-3 py-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-start align-items-xl-start align-items-xxl-start">
+                                                <li>Oda Kahvaltı</li>
+                                                <li>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                                <li>Ücretsiz İptal</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-end align-items-xl-end align-items-xxl-end">
+                                                <li style="color: slategrey;">3 Gece İçin Toplam:</li>
+                                                <li>1900 TL</li>
+                                                <button class="btn btn-outline-ets">
+                                                    <h5>ODAYI SEÇ</h5>
+                                                </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 room-details my-2">
+                    <div class="row">
+                        <div class="col-auto room-detail-img mx-lg-2 mx-2"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 col-xxl-10 flex-sm-column flex-md-column d-lg-flex flex-lg-row d-xl-flex flex-xl-row d-xxl-flex flex-xxl-row align-items-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                                <h5 class="card-title">Deniz Manzaralı</h5>
+                                <div>
+                                    <ul>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">hotel</i>
+                                            <span class="px-2">Çift Kişilik Tek Geniş Yatak</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">groups</i>
+                                            <span class="px-2">3 Kişilik</span>
+                                        </li>
+                                        <li class="d-flex"> <i class="material-icons"
+                                                style="color:rgb(254, 223, 119) ;">zoom_out_map</i>
+                                            <span class="px-2">30 m²</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-3">
+                                        <li>
+                                            <a class="d-flex" href="">
+                                                <span>Detaylı Oda Bilgisi</span><i class="material-icons px-2"
+                                                    style="color:rgb(254, 223, 119) ;">arrow_forward</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+                                <div class="room-detail-inner px-3 py-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-start align-items-xl-start align-items-xxl-start">
+                                                <li>Oda Kahvaltı</li>
+                                                <li>0-6 Yaş 1 Çocuk Ücretsiz</li>
+                                                <li>Ücretsiz İptal</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                                            <ul class="d-flex flex-column align-items-lg-end align-items-xl-end align-items-xxl-end">
+                                                <li style="color: slategrey;">3 Gece İçin Toplam:</li>
+                                                <li>1900 TL</li>
+                                                <button class="btn btn-outline-ets">
+                                                    <h5>ODAYI SEÇ</h5>
+                                                </button>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row my-5" id="list-item-3">
+                <div class="col-12">
+                    <h2>
+                        Tesis Olanakları
+                    </h2>
+                </div>
+                <div class="col-12 room-details my-2">
+                    <div class="row">
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">24 Saat Resepsiyon</div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Halk Plajı</div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Hızlı Giriş / Hızlı Çıkış</div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Bagaj Odası
+                        </div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Emanet Kasası
+                        </div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Kiralık Kasa
+                        </div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Kahvaltı Salonu <span class="p-1 "
+                                style="font-size: x-small;border-radius: 8px;background-color: rgb(253, 240, 213);">Ücretli</span>
+                        </div>
+                        <div class="col-6 col-sm-6  col-md-6 col-lg-3 col-xl-3 col-xxl-3 p-2">Kapalı Restoran <span class="p-1"
+                                style="font-size: x-small; border-radius: 8px;background-color: rgb(253, 240, 213);">Ücretli</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 justify-content-between" id="list-item-4">
+                <div class="col-12">
+                    <h2>
+                        Detaylı Bilgi
+                    </h2>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 room-details accordion-item my-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="d-flex flex-column">
+                                <i class="material-icons my-2"
+                                    style="color:rgb(254, 223, 119) ; font-size: 32px;">crop_free</i>
+                                <h6>BÜYÜKLÜK BİLGİSİ</h6>
+                            </div>
+
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti tempore
+                                        error, perspiciatis dignissimos hic voluptatem at nostrum cupiditate. Laborum?
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 room-details accordion-item my-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <div class="d-flex flex-column">
+                                <i class="material-icons my-2"
+                                    style="color:rgb(254, 223, 119) ; font-size: 32px;">pool</i>
+                                <h6>DENİZ&HAVUZ</h6>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Lorem, ipsum.</li>
+                                <li>Delectus, sit.</li>
+                                <li>Consequatur, autem.</li>
+                                <li>Optio, officia.</li>
+                                <li>Provident, ex!</li>
+                                <li>Nemo, ipsam.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 room-details accordion-item my-3">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <div class="d-flex flex-column">
+                                <svg style="fill:rgb(254, 223, 119)" xmlns="http://www.w3.org/2000/svg" width="32"
+                                    height="32" fill="currentColor" class="bi bi-person-hearts my-2"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z" />
+                                </svg>
+                                <h6>BALAYI</h6>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Sequi officia atque quae. Animi.</li>
+                                <li>Facilis inventore cum voluptate numquam?</li>
+                                <li>Maxime minus reprehenderit aut est!</li>
+                                <li>Quas reprehenderit necessitatibus fugit. Cum!</li>
+                                <li>Ipsam debitis consectetur unde veritatis.</li>
+                                <li>Iusto maxime numquam adipisci eum.</li>
+                                <li>Voluptatum cupiditate aperiam culpa autem!</li>
+                                <li>Pariatur eligendi labore minus quo?</li>
+                                <li>Nihil, quam. Reiciendis, ratione ea.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 room-details accordion-item my-3">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <div class="d-flex flex-column">
+                                <i class="material-icons my-2"
+                                    style="color:rgb(254, 223, 119) ; font-size: 32px;">local_dining</i>
+                                <h6>YEME&İÇME</h6>
+                            </div>
+
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                                <li><strong>7:00 10:00</strong> Lorem, ipsum dolor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="row my-5" id="list-item-5">
+                <div class="col-12">
+                    <h2>
+                        Yorumlar
+                    </h2>
+                </div>
+                <div class="col-12 room-details my-2">
+                    <div class="row" style="align-items: baseline;">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 my-3">
+                            <div class="row me-3 d-flex p-2 justify-content-center align-items-center"
+                                style="background-color: grey;">
+                                <h1 class="col m-auto p-auto  " style="text-align: center; border-right: 2px solid black;">8.2</h1>
+                                
+                                <div
+                                    class="col-6 col-sm-6 col-md-6 col-lg-auto col-xl-auto col-xxl-auto ms-5 m-auto p-auto d-flex flex-column justify-content-start align-items-center" >
+                                    <p class="d-inline" style="margin: 0; padding:0 ;align-self: start;">Çok İyi</p>
+                                    <p class="d-inline" style="margin: 0; padding:0;align-self: start;">51 Yorum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="btn btn-outline-secondary mt-2">Tüm Yorumlar</div>
+                            <div class="btn btn-outline-secondary mt-2">Aileler</div>
+                            <div class="btn btn-outline-secondary mt-2">Çiftler</div>
+                            <div class="btn btn-outline-secondary mt-2">Tek Misafirler</div>
+                            <div class="btn btn-outline-secondary mt-2">Arkadaşlar</div>
+                            <div class="btn btn-outline-secondary mt-2">İş Seyahati</div>
+                        </div>
+                        <div class="row justify-content-between">
+
+                            <div class="col-12 my-2 p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/157-1578186_user-profile-default-image-png-clipart.png" alt=""
+                                            width="32px" height="32px">
+                                        <div class="d-flex flex-column ms-2">
+                                            <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                            <p style="margin: 0; padding:0">Haziran 2022</p>
+                                        </div>
+
+                                    </div>
+                                    <div>10.0 Mükemmel </div>
+
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                    in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                    doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+
+
+                            </div>
+                            <div class="col-12 my-2  p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/157-1578186_user-profile-default-image-png-clipart.png" alt=""
+                                            width="32px" height="32px">
+                                        <div class="d-flex flex-column ms-2">
+                                            <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                            <p style="margin: 0; padding:0">Haziran 2022</p>
+                                        </div>
+
+                                    </div>
+                                    <div>10.0 Mükemmel </div>
+
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                    in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                    doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+
+
+                            </div>
+                            <div class="col-12 my-2  p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/157-1578186_user-profile-default-image-png-clipart.png" alt=""
+                                            width="32px" height="32px">
+                                        <div class="d-flex flex-column ms-2">
+                                            <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                            <p style="margin: 0; padding:0">Haziran 2022</p>
+                                        </div>
+
+                                    </div>
+                                    <div>10.0 Mükemmel </div>
+
+                                </div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                    in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                    doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+
+
+                            </div>
+
+                            <div class="d-grid my-2">
+                                <button class="btn btn-outline-secondary" type="button">Load More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+    <script src="./datepicker.js">
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+
+</html>
