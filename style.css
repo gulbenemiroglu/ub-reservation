@@ -1,49 +1,10 @@
-/* 
-
-@media (min-width: 992px) {
-    .img-1 {
-        max-width: 960px;
-    }
+/* ID */
+#list-item-4 .col-6 {
+    width: 49%;
+    height: fit-content;
 }
 
-@media (min-width: 768px) {
-    .img-1 {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 576px) {
-    .img-1 {
-        height: 540px;
-    }
-}
-@media (min-width: 1200px) {
-    .img-1 {
-        background: url("./img/otel1.jpg") center center;
-        background-size: cover;
-        
-    }
-    .img-2 {
-        background: url("./img/otel2.jpg") center center;
-        background-size: cover;
-        
-    }
-    .img-3 {
-        background: url("./img/otel3.jpg") center center;
-        background-size: cover;
-        
-    }
-    .img-4 {
-        background: url("./img/otel4.jpg") center center;
-        background-size: cover;
-    }
-}
-
-
- */
-
-
-
+/* CLASS */
 .img-1 {
     background: url("./img/otel1.jpg") center center;
     background-size: cover;
@@ -67,18 +28,6 @@
     background-size: cover;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-
-}
-
-a:hover {
-    font-weight: bold;
-    color: black;
-
-}
-
 .border-full {
     border-bottom: 1px solid whitesmoke;
 
@@ -88,7 +37,6 @@ a:hover {
     border-bottom: 2px solid rgb(253, 199, 15);
 
 }
-
 
 .room-details {
     padding: 15px;
@@ -108,18 +56,6 @@ a:hover {
     border-radius: 8px;
 
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    padding: 0;
-    margin: 0;
-}
-
 .btn-outline-ets {
     color: rgb(254, 223, 119);
     border-color: rgb(254, 223, 119);
@@ -144,11 +80,6 @@ li {
 .room-details ul li a :hover,
 .room-details ul li a :focus {
     font-weight: inherit;
-}
-
-#list-item-4 .col-6 {
-    width: 49%;
-    height: fit-content;
 }
 
 .accordion-button,
@@ -180,12 +111,6 @@ li {
     border: none;
     box-shadow: none;
 }
-
-input[type="date" i] {
-    inline-size: auto;
-    margin-inline: auto;
-}
-
 .btn-danger {
     color: black;
     font-weight: bold;
@@ -206,6 +131,49 @@ input[type="date" i] {
     width: auto;
 }
 
+
+.small-dropdown{
+    padding: unset !important;
+}
+
+.black-filter{
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+/* ELEMENTS */
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    font-weight: bold;
+    color: black;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+input[type="date" i] {
+    inline-size: auto;
+    margin-inline: auto;
+}
+
+
+/* MEDIA QUERY */
 @media (min-width: 0px) and (max-width: 767.98px) {
     .room-detail-img {
         height: 160px !important;
@@ -306,13 +274,7 @@ input[type="date" i] {
     .img-2,.img-3,.img-4{
         display: none;
        }
-    /* .img-col {
-        width: 100%;
-    }
     
-    .smallimg-col {
-        display: none;
-    } */
 }
 
 @media (min-width: 576px) and (max-width: 767.5px) {
@@ -342,13 +304,7 @@ input[type="date" i] {
     .img-2,.img-3,.img-4{
         display: none;
        }
-    /* .img-col {
-        width: 100%;
-    }
-    
-    .smallimg-col {
-        display: none;
-    } */
+ 
 }
 
 @media (min-width: 0px) and (max-width: 575.5px) {
@@ -381,14 +337,4 @@ input[type="date" i] {
    .border-deco{
     font-size: x-small;
    }
-}
-
-.small-dropdown{
-    padding: unset !important;
-}
-
-.black-filter{
-    background-color: rgb(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
 }
